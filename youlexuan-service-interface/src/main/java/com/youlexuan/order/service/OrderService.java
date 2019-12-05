@@ -1,8 +1,8 @@
 package com.youlexuan.order.service;
-import java.util.List;
+import com.youlexuan.entity.PageResult;
 import com.youlexuan.pojo.TbOrder;
 
-import com.youlexuan.entity.PageResult;
+import java.util.List;
 /**
  * 服务层接口
  * @author Administrator
@@ -38,7 +38,6 @@ public interface OrderService {
 
 	/**
 	 * 根据ID获取实体
-	 * @param id
 	 * @return
 	 */
 	public TbOrder findOne(Long orderId);
@@ -46,7 +45,6 @@ public interface OrderService {
 	
 	/**
 	 * 批量删除
-	 * @param ids
 	 */
 	public void delete(Long[] orderIds);
 

@@ -139,12 +139,14 @@ public class TypeTemplateServiceImpl implements TypeTemplateService {
 
 		TbTypeTemplate typeTemplate = typeTemplateMapper.selectByPrimaryKey(id);
 		List<Map> mapList = JSON.parseArray(typeTemplate.getSpecIds(), Map.class);
-		for(Map map:mapList){//{"id":27,"text":"网络"}
-			Long specId  = new Long((Integer) map.get("id"));
-			TbSpecificationOptionExample exam = new TbSpecificationOptionExample();
-			exam.createCriteria().andSpecIdEqualTo(specId);
-			List<TbSpecificationOption> specOptList = spcOptMapper.selectByExample(exam);//['3G','4G','5G']
-			map.put("options",specOptList);
+		if (mapList != null) {
+			for (Map map : mapList) {//{"id":27,"text":"网络"}
+				Long specId = new Long((Integer) map.get("id"));
+				TbSpecificationOptionExample exam = new TbSpecificationOptionExample();
+				exam.createCriteria().andSpecIdEqualTo(specId);
+				List<TbSpecificationOption> specOptList = spcOptMapper.selectByExample(exam);//['3G','4G','5G']
+				map.put("options", specOptList);
+			}
 		}
 		return mapList;
 	}

@@ -54,7 +54,7 @@ app.controller('goodsController' ,function($scope,$controller,$location,goodsSer
 		if($scope.entity.goods.id!=null){//如果有ID
 			serviceObject=goodsService.update( $scope.entity ); //修改  
 		}else{
-			serviceObject=goodsService.add();//增加
+			serviceObject=goodsService.add($scope.entity);//增加
 		}				
 		serviceObject.success(
 			function(response){

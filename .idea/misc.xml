@@ -27,13 +27,6 @@
         <option value="$PROJECT_DIR$/youlexuan-page-service/pom.xml" />
       </list>
     </option>
-    <option name="ignoredFiles">
-      <set>
-        <option value="$PROJECT_DIR$/ddddd/pom.xml" />
-        <option value="$PROJECT_DIR$/youlexuan-order-service/pom.xml" />
-        <option value="$PROJECT_DIR$/youlexuan-pay-service/pom.xml" />
-      </set>
-    </option>
   </component>
   <component name="ProjectResources">
     <resource url="http://www.springframework.org/schema/aop/spring-aop.xsd" location="$USER_HOME$/.m2/xsd/spring-aop-4.2.xsd" />

@@ -134,17 +134,17 @@
                             
                             <!--图片上传-->
                             <div class="tab-pane" id="pic_upload">
-                                <div class="row data-type">                                  
+                                <div class="row data-type">
 								 <!-- 颜色图片 -->
 								 <div class="btn-group">
 					                 <button type="button" class="btn btn-default" title="新建" ng-click="image_entity={}" data-target="#uploadModal"  data-toggle="modal"  ><i class="fa fa-file-o"></i> 新建</button>
-                             		                 
+
 					             </div>
-								 
+
 								 <table class="table table-bordered table-striped table-hover dataTable">
 					                    <thead>
 					                        <tr>
-					                            
+
 											    <th class="sorting">颜色</th>
 											    <th class="sorting">图片</th>
 												<th class="sorting">操作</th>
@@ -160,25 +160,25 @@
 												 <td> <button type="button" class="btn btn-default" title="删除" ng-click="removeImg($index)" ><i class="fa fa-trash-o"></i> 删除</button></td>
 					                      </tr>
 					                    </tbody>
-								 </table> 
-								  
+								 </table>
+
                                 </div>
                             </div>
-                           
-                           
+
+
                             <!--扩展属性-->
                             <div class="tab-pane" id="customAttribute">
-                                <div class="row data-type">                                
+                                <div class="row data-type">
 	                                <div ng-repeat="cai in entity.goodsDesc.customAttributeItems">
 		                                <div class="col-md-2 title">{{cai.text}}</div>
 				                        <div class="col-md-10 data">
 				                              <input class="form-control" ng-model="cai.value" placeholder="{{cai.text}}">
 				                        </div>
-	                                </div>       
+	                                </div>
 
                                 </div>
                             </div>
-                      
+
                             <!--规格-->
                             <div class="tab-pane" id="spec">
                             	<div class="row data-type">
@@ -188,31 +188,31 @@
 			                        </div>
                             	</div>
                             	<p>
-                            	
+
                             	<div>
-                            	
+
 	                                <div class="row data-type">
-	                                
+
 		                                <div ng-repeat="spec in specList">
 			                                <div class="col-md-2 title">{{spec.text}}</div>
 					                        <div class="col-md-10 data">
-					                               
+
 					                            <span  ng-repeat="opt in spec.options">
 					                            	<input  type="checkbox" ng-click="updateSpecAttribute($event,spec.text,opt.optionName);creatItemList()" ng-checked="checkAttributeValue(spec.text,opt.optionName)">{{opt.optionName}}
-					                            </span>  	
+					                            </span>
 
-					                            	
+
 					                        </div>
-		                                </div>   
+		                                </div>
 
-		                                                                                  
+
 	                                </div>
-	
-	                                
+
+
 	                                <div class="row data-type">  {{entity.goodsDesc.specificationItems}}<br>{{entity.itemList}}
 	                                	 <table class="table table-bordered table-striped table-hover dataTable">
 						                    <thead>
-						                        <tr>					                          
+						                        <tr>
 												    <th class="sorting" ng-repeat="spec in entity.goodsDesc.specificationItems">{{spec.attributeName}}</th>
 												    <th class="sorting">价格</th>
 												    <th class="sorting">库存</th>
@@ -240,12 +240,12 @@
 										            </td>
 						                      </tr>
 
-											  
+
 						                    </tbody>
 									 	</table>
-								
+
 	                                </div>
-	                                
+
 	                            </div>
                             </div>
                             

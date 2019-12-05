@@ -25,7 +25,8 @@
         <module>youlexuan-user-web</module>
         <module>youlexuan-cart-web</module>
         <module>youlexuan-cart-service</module>
-
+        <module>youlexuan-order-service</module>
+        <module>youlexuan-pay-service</module>
     </modules>
 
     <packaging>pom</packaging>

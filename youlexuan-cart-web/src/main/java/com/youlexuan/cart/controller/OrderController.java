@@ -1,17 +1,16 @@
 package com.youlexuan.cart.controller;
-import java.util.Date;
-import java.util.List;
-
+import com.alibaba.dubbo.config.annotation.Reference;
+import com.youlexuan.entity.PageResult;
+import com.youlexuan.entity.Result;
+import com.youlexuan.order.service.OrderService;
+import com.youlexuan.pojo.TbOrder;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.alibaba.dubbo.config.annotation.Reference;
-import com.youlexuan.pojo.TbOrder;
-import com.youlexuan.order.service.OrderService;
 
-import com.youlexuan.entity.PageResult;
-import com.youlexuan.entity.Result;
+import java.util.Date;
+import java.util.List;
 /**
  * controller
  * @author Administrator
@@ -84,7 +83,6 @@ public class OrderController {
 	
 	/**
 	 * 获取实体
-	 * @param id
 	 * @return
 	 */
 	@RequestMapping("/findOne")
@@ -94,7 +92,6 @@ public class OrderController {
 	
 	/**
 	 * 批量删除
-	 * @param ids
 	 * @return
 	 */
 	@RequestMapping("/delete")
@@ -110,7 +107,6 @@ public class OrderController {
 	
 		/**
 	 * 查询+分页
-	 * @param brand
 	 * @param page
 	 * @param rows
 	 * @return

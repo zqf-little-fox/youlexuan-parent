@@ -46,8 +46,8 @@ public class CartController {
         try {
             response.setHeader("Access-Control-Allow-Origin", "http://localhost:9105");
             response.setHeader("Access-Control-Allow-Credentials", "true");
-
             String name = SecurityContextHolder.getContext().getAuthentication().getName();
+            System.out.println(name);
             //1、拿到老的购物车列表
             List<Cart> oldCartList = findCartList();
             //2、加工新的购物车列表

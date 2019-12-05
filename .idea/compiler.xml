@@ -12,8 +12,10 @@
         <module name="youlexuan-content-service" />
         <module name="youlexuan-dao" />
         <module name="youlexuan-manager-web" />
+        <module name="youlexuan-order-service" />
         <module name="youlexuan-page-service" />
         <module name="youlexuan-page-web" />
+        <module name="youlexuan-pay-service" />
         <module name="youlexuan-pojo" />
         <module name="youlexuan-portal-web" />
         <module name="youlexuan-search-service" />
@@ -27,8 +29,6 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ddddd" target="1.8" />
-      <module name="youlexuan-order-service" target="1.8" />
-      <module name="youlexuan-pay-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
