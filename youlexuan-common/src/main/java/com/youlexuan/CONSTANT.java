@@ -15,4 +15,5 @@ public class CONSTANT {
     public static final String CART_LIST_COOKIE_KEY = "cart_list_cookie_key";
     public static final String CART_LIST_REDIS_KEY = "cart_list_redis_key";
     public static final String PAY_LOG_KEY = "pay_log_key";
+    public static final  String SECKILL_GOODS_LIST_KEY = "seckill_goods_List_key";
 }

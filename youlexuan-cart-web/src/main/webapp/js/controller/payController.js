@@ -14,7 +14,7 @@ app.controller('payController' ,function($scope,$controller   ,payService){
 
                     var qr = new QRious({
 						element:document.getElementById("qrious"),
-						size:200,
+						size:250,
 						level:"H",
 						value:response.qrcode
 					})

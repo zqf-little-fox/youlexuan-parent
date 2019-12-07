@@ -55,12 +55,4 @@ public interface OrderService {
 	 * @return
 	 */
 	public PageResult findPage(TbOrder order, int pageNum, int pageSize);
-
-	/**
-	 * 当支付成功以后
-	 * 1、修改订单状态
-	 * 2、修改支付日志的状态，并将支付日志的redis清空
-	 */
-	public  void updateOrderStauts(String out_trade_no,String transaction_id);
-	
 }

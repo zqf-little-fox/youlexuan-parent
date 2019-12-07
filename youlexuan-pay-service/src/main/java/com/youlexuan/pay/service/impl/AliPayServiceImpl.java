@@ -4,7 +4,9 @@ import com.alibaba.dubbo.config.annotation.Service;
 import com.alipay.api.AlipayApiException;
 import com.alipay.api.AlipayClient;
 import com.alipay.api.request.AlipayTradePrecreateRequest;
+import com.alipay.api.request.AlipayTradeQueryRequest;
 import com.alipay.api.response.AlipayTradePrecreateResponse;
+import com.alipay.api.response.AlipayTradeQueryResponse;
 import com.youlexuan.pay.service.AliPayService;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -52,14 +54,31 @@ public class AliPayServiceImpl implements AliPayService {
         } catch (AlipayApiException e) {
             e.printStackTrace();
         }
-
-
         return map;
-
     }
 
     @Override
     public Map queryPayStatus(String out_trade_no) {
-        return null;
+        Map<String,String> map=new HashMap<String, String>();
+        AlipayTradeQueryRequest request = new AlipayTradeQueryRequest();
+        request.setBizContent("{" +
+                "    \"out_trade_no\":\""+out_trade_no+"\"," +
+                "    \"trade_no\":\"\"}"); //设置业务参数
+        //发出请求
+        try {
+            AlipayTradeQueryResponse response = alipayClient.execute(request);
+            String code=response.getCode();
+            System.out.println("返回值1:"+response.getBody());
+            if(code.equals("10000")){
+
+                //System.out.println("返回值2:"+response.getBody());
+                map.put("out_trade_no", out_trade_no);
+                map.put("trade_no", response.getTradeNo());
+                map.put("tradestatus", response.getTradeStatus());
+            }
+        } catch (AlipayApiException e) {
+            e.printStackTrace();
+        }
+        return map;
     }
 }

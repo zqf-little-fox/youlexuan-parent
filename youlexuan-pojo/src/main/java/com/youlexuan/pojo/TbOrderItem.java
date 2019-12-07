@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 
 public class TbOrderItem implements Serializable {
+    //private static final long serialVersionUID = -2245747985203112287L;
     private Long id;
 
     private Long itemId;

@@ -27,6 +27,8 @@
         <module>youlexuan-cart-service</module>
         <module>youlexuan-order-service</module>
         <module>youlexuan-pay-service</module>
+        <module>youlexuan-seckill-service</module>
+        <module>youlexuan-seckill-web</module>
     </modules>
 
     <packaging>pom</packaging>

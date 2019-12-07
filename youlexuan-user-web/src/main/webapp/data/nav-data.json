@@ -13,7 +13,7 @@
               {"tit":"成功加入购物车","url":"success-cart.html"},
               {"tit":"结算页","url":"getOrderInfo.html"},
               {"tit":"支付页","url":"pay.html"},
-               {"tit":"微信支付页","url":"weixinpay.html"},
+               {"tit":"支付宝支付页","url":"weixinpay.html"},
               {"tit":"支付成功页","url":"paysuccess.html"},
               {"tit":"支付失败页","url":"payfail.html"}]
 

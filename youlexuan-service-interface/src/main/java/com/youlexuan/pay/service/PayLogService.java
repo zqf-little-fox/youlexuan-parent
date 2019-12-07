@@ -9,4 +9,6 @@ public interface PayLogService {
      *    作用一：生成二维码时从支付日志中得到支付的ID以及支付的金额
      */
     public TbPayLog searchPayLogByUserId(String userID);
+
+    public void updateOrderStatus(String out_trade_no, String transaction_id);
 }

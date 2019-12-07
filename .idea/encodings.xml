@@ -8,7 +8,6 @@
     <file url="file://$PROJECT_DIR$/youlexuan-dao" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/youlexuan-manager-web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/youlexuan-order-service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/youlexuan-order-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/youlexuan-page-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/youlexuan-page-web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/youlexuan-pay-service" charset="UTF-8" />
@@ -16,6 +15,8 @@
     <file url="file://$PROJECT_DIR$/youlexuan-portal-web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/youlexuan-search-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/youlexuan-search-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/youlexuan-seckill-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/youlexuan-seckill-web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/youlexuan-sellergoods-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/youlexuan-service-interface" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/youlexuan-shop-web" charset="UTF-8" />
